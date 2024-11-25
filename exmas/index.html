@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slanted Header Table</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 5px;
+    padding: 20px;
+  }
+
+  .header-cell {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px;
+    background-color: #cce7ff;
+    border: 1px solid #ccc;
+    height: 120px;
+  }
+
+  .date-cell {
+    background-color: #ffcce6;
+    grid-column: span 1;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .recruitment-cell {
+    background-color: #cce7ff;
+    grid-column: span 1;
+    text-align: center;
+  }
+
+  .tools-method-cell {
+    background-color: #b3ccff;
+    grid-column: span 1;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="table-container">
+  <div class="date-cell">Date</div>
+  <div class="recruitment-cell">Recrutement</div>
+  <div class="tools-method-cell">Outils & Méthod</div>
+  
+  <div class="header-cell">Relance</div>
+  <div class="header-cell">Prise de rdv</div>
+  <div class="header-cell">Prêt à rentrer</div>
+  <div class="header-cell">Prêt Upline</div>
+  <div class="header-cell">Prêt Groupe</div>
+  <div class="header-cell">Offres produits</div>
+  <div class="header-cell">Inscription</div>
+  <div class="header-cell">Achats P&K</div>
+  <div class="header-cell">Test ADR</div>
+  <div class="header-cell">Planification</div>
+  <div class="header-cell">Feuille de route</div>
+  <div class="header-cell">Process Inscription</div>
+  <div class="header-cell">Statut DtoC</div>
+  <div class="header-cell">My Office, OTG</div>
+  <div class="header-cell">Logé</div>
+</div>
+
+</body>
+</html>
